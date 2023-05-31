@@ -458,46 +458,43 @@ Sign in</a>
                     Scroll down                </a>
             </div>
 
-               <!-- TradingView Widget BEGIN -->
+              <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    
-    <script type="text/javascript" src="../s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
     {
-    "symbols": [
-      {
-        "description": "",
-        "proName": "NASDAQ:TSLA"
-      },
-      {
-        "description": "",
-        "proName": "NASDAQ:AAPL"
-      },
-      {
-        "description": "",
-        "proName": "NASDAQ:AMZN"
-      },
-      {
-        "description": "",
-        "proName": "LSE:SPX"
-      },
-      {
-        "description": "",
-        "proName": "NASDAQ:SYPR"
-      },
-      {
-        "description": "",
-        "proName": "NASDAQ:NFLX"
-      }
-    ],
-    "colorTheme": "dark",
-    "isTransparent": true,
-    "showSymbolLogo": true,
-    "locale": "en"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR/USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "BITSTAMP:ETHUSD",
+      "title": "Ethereum"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "light",
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
         </div>
 
         
@@ -2183,8 +2180,8 @@ window.addEventListener("resize", adjustFontSize, false);
     <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/" rel="noopener" target="_blank"><span class="blue-text">Forex market</span></a> by TradingView</div>
-  <script type="text/javascript" src="../../s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
   {
   "width": 770,
   "height": 400,

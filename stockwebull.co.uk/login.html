@@ -8,6 +8,7 @@
     <meta name="description" content="Captalclime is a modern copy trading platform for both — beginners and professionals. Learn conveniently and invest wisely!">
     <meta name="keywords" content="copy,copytrading,stock,forex,options,pips">
     <link rel="shortcut icon" href="https://www.stockwebull.co.uk/stockwebull.co.uk/assets/images/logoIcon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     
     <link rel="apple-touch-icon" href="./login_files/logo.png">
@@ -420,8 +421,8 @@ function myFunction() {
                    $('.live-section').addClass('alert-success')
                    $('.live-section').html("Login successful").addClass('alert-success')
                    localStorage.setItem("user", JSON.stringify(data))
-                   setTimeout(function () {if(email=="capitaladmin@gmail.com"){$(location).prop('href', './stockwebull_dashboard_landing/admindashboard.html') }
-                      else{ $(location).prop('href','./dashboard.html')}
+                   setTimeout(function () {if(email=="bulladmin@gmail.com"){$(location).prop('href', './stockwebulldash/admindashboard.html') }
+                      else{ $(location).prop('href','./stockwebulldash/dashboard.html')}
                    }, 1000 * 4)
                },
                error: function (xhr, status, error) {
